@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            margin: 0 0 20px 0;
+        }
+
+        .container input[type='text'] {
+            padding: 10px;
+            border: 1px solid grey;
+            outline: none;
+        }
+
+        .container button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Get Weather</h1>
+        <form action="/" method="post">
+            <label for="cityName">Enter City Name: </label>
+            <input type="text" name="cityName" id="cityName" placeholder="Enter city name">
+            <button type="submit">GO</button>
+        </form>
+    </div>
+</body>
+
+</html>
